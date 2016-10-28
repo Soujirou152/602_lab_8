@@ -30,6 +30,10 @@ public class GenericStack2<E> {
 			array = temp;
 			array[sizeIndex++] = element;
 			sizeCounter++;
+			StdOut.println("Current capacity of array is " + array.length); // used to verify when filled to
+											// capacity, doubles the current
+											// array size, so 10, 20, 40, 80
+											// etc. can be removed to not show
 
 		} else {
 			array[sizeIndex++] = element;
@@ -40,7 +44,7 @@ public class GenericStack2<E> {
 	public E pop() {
 		// sizeIndex--;
 		if (getSize() == 0) {
-			throw new RuntimeException("You tried peeking at an empt stack..");
+			throw new RuntimeException("You tried peeking at an empty stack..");
 		} else {
 			return array[--sizeIndex];
 		}

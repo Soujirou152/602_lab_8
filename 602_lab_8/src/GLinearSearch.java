@@ -58,6 +58,8 @@ public class GLinearSearch
 		StdOut.println(linearSearch2(intArray,3));
 		
 		StdOut.println(linearSearchRec(intArray,3,3));
+		
+		StdOut.println(linearSearchRec(strArray,0,"Wed"));
 
 	}
 
